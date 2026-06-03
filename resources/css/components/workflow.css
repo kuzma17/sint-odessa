@@ -1,0 +1,83 @@
+
+/*Workflow*/
+.workflow-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.workflow-step {
+    position: relative;
+    text-align: center;
+    flex: 1;
+    min-width: 180px;
+    z-index: 1;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.workflow-step.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.step-number {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    line-height: 70px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    background: #1e88c8; /* основной цвет сайта, более спокойный */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.step-card {
+    /*background: #fff;*/
+    padding: 25px 15px;
+    /*border-radius: 15px;*/
+    height: 150px;
+    /*box-shadow: 0 10px 25px rgba(0,0,0,0.08);*/
+    /*transition: transform 0.3s, box-shadow 0.3s;*/
+}
+
+.step-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.step-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    .workflow-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .workflow-step {
+        text-align: left;
+        display: flex;
+        align-items: center; /* по вертикали центрируем */
+        gap: 20px;
+    }
+
+    .step-number {
+        margin: 0; /* убираем авто */
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* цифра по центру круга */
+    }
+
+}

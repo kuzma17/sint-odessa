@@ -1,0 +1,311 @@
+/*!* Header *!*/
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+
+body.fixed-header {
+    padding-top: 80px; /* Размер шапки */
+}
+
+/* GRID */
+.header-grid{
+    display:flex;
+    align-items:center;
+    padding:10px 0;
+    gap:30px;
+}
+
+/* LOGO */
+.header-logo{
+    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+.header-logo .logo_row .logo_img{
+    float: left
+}
+.header-logo .logo_row .logo_img img{
+    width: 75px;
+    height: 75px;
+}
+.header-logo .logo_row .logo_text{
+    float: left;
+    padding: 2px 0;
+}
+.header-logo .logo_row .logo_text .logo_name{
+    color:#0680C1;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-top: 25px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.header-logo .logo_row .logo_description{
+    font-size: 17px;
+    font-weight: normal;
+    color: #696767;
+    font-style: italic;
+    line-height: 0;
+    margin: 0 0 0 3px;
+    text-transform: lowercase;
+}
+
+/* RIGHT */
+.header-right{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    transition:all .25s ease;
+}
+
+/* TOP LINE */
+.header-topline{
+    display:flex;
+    gap:30px;
+    font-size:13px;
+    color:#667;
+    margin:0 10px 6px 0;
+
+}
+
+.header-info{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#667;
+    /*font-size:14px;*/
+}
+
+.header-info i{
+    color:#1d69a5;
+}
+
+/* WORKTIME */
+.header-worktime i{
+    color:#1d69a5;
+    margin-right:5px;
+}
+
+/*!* LANG *!*/
+.header-lang{
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.header-lang a{
+    text-decoration:none;
+    color:#1d69a5;
+}
+
+/* BOTTOM LINE */
+.header-bottomline{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* MENU */
+.header-menu{
+    display:flex;
+    gap:10px;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.header-menu a{
+    text-decoration:none;
+    color:#667;
+    font-weight:500;
+    font-size: 17px;
+}
+
+.header-menu a:hover{
+    color:#1d69a5;
+}
+
+header button.btn-blue{
+    padding: 10px 14px !important;
+}
+
+/* PHONE */
+.phone-main i{
+    color:#1d69a5;
+    /*margin-right:2px;*/
+}
+
+/*phones*/
+.header-phone-dropdown{
+    position:relative;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.phone-main{
+    display:flex;
+    align-items:center;
+    gap:3px;
+    font-size: 18px;
+}
+
+.phone-arrow{
+    font-size:12px;
+}
+
+/* список */
+.phone-list{
+    position:absolute;
+    top:35px;
+    right:0;
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    padding:10px 0;
+    width:300px;
+    display:none;
+    z-index:1000;
+}
+
+/* пункт */
+.phone-list a{
+    display:flex;
+    justify-content:space-between;
+    padding:8px 14px;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+}
+
+.phone-list a:hover{
+    background:#f5f7fa;
+}
+
+/* активный */
+.header-phone-dropdown.open .phone-list{
+    display:block;
+}
+
+.mobile-toggle{
+    display:none;
+    font-size:26px;
+    background:none;
+    border:none;
+    color:#1d69a5;
+}
+
+.header-mobile-panel{
+    display:block !important;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 992px){
+
+    .site-header{
+        position: relative;
+    }
+
+    .header-grid{
+        flex-wrap:wrap;
+        align-items:center;
+    }
+
+    /* бургер */
+    .mobile-toggle{
+        display:block;
+        font-size:26px;
+        background:none;
+        border:none;
+        color:#1d69a5;
+        margin-left:auto;
+    }
+
+    .header-right{
+        display:none;
+        width:100%;
+    }
+
+    /* прячем весь правый блок */
+    .header-mobile-panel{
+        width:100%;
+        display:none;
+        flex-direction:column;
+        margin-top:10px;
+        border-top:1px solid #eee;
+        padding-top:10px;
+    }
+
+    .site-header.open{
+        position:relative;
+    }
+
+    .site-header.open .header-right{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+        border-top:1px solid #eee;
+    }
+
+    /* TOP */
+    .header-topline{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+        width:100%;
+    }
+
+
+    /* MENU */
+    .header-bottomline{
+        /*display:none;*/
+        flex-direction:column;
+        align-items:flex-start;
+        /*gap:15px;*/
+        width:100%;
+    }
+
+    .btn-blue{
+        width:100%;
+    }
+
+    .header-menu{
+        flex-direction:column;
+        gap:0;
+        width:100%;
+    }
+    .header-menu a{
+        padding:5px 0;
+        border-bottom:1px solid #f1f1f1;
+        width:100%;
+    }
+
+    /* PHONE */
+    .phone-main{
+        font-size:20px;
+    }
+
+    .phone-list{
+        position:static;
+        display:none;
+        box-shadow:none;
+        border:none;
+        padding:0;
+    }
+
+    .header-phone-dropdown.open .phone-list{
+        display:flex;
+        flex-direction:column;
+    }
+
+    /* CTA */
+    .btn-blue{
+        width:100%;
+    }
+}

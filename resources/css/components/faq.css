@@ -1,0 +1,47 @@
+/*FAQ*/
+.faq-list{
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08)
+}
+
+.faq-item {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+/* при открытии вращаем стрелку */
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* плавное скрытие/появление */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    padding: 0 1rem;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px; /* достаточно для текста */
+    padding: 1rem;
+}

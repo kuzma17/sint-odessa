@@ -1,0 +1,131 @@
+/*!* HERO SLIDER *!*/
+.hero {
+    padding: 0;
+}
+
+/* =========================
+   CAROUSEL BASE
+========================= */
+#heroCarousel {
+    height: 80vh;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* =========================
+   BACKGROUND IMAGE
+========================= */
+.slide-bg {
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 0;
+
+    transform: scale(1);
+    transition: transform 6s ease;
+}
+
+/* zoom эффект активного слайда */
+.carousel-item.active .slide-bg {
+    transform: scale(1.08);
+}
+
+/* =========================
+   DARK OVERLAY
+========================= */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 1;
+}
+
+/* =========================
+   CONTENT LAYER
+========================= */
+.slide-content {
+    position: relative;
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10%;
+    max-width: 650px;
+
+    color: #fff;
+}
+
+/* =========================
+   TEXT BASE STATE (hidden)
+========================= */
+.slide-content h1,
+.slide-content p,
+.slide-content a {
+    opacity: 0;
+    transform: translateY(30px);
+    color: #fff;
+}
+
+/* =========================
+   ANIMATIONS (on active slide)
+========================= */
+.carousel-item.active .slide-content h1 {
+    animation: fadeUp 0.8s forwards;
+}
+
+.carousel-item.active .slide-content p {
+    animation: fadeUp 0.8s forwards 0.2s;
+}
+
+.carousel-item.active .slide-content a {
+    animation: fadeUp 0.8s forwards 0.4s;
+}
+
+/* =========================
+   KEYFRAMES
+========================= */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   OPTIONAL: BUTTON STYLE
+========================= */
+.btn-blue {
+    /*background: #1e6bff;*/
+    /*color: #fff;*/
+    /*padding: 12px 24px;*/
+    /*display: inline-block;*/
+    /*border-radius: 6px;*/
+    /*text-decoration: none;*/
+    width: fit-content;
+}
+
+/*.btn-blue:hover {*/
+/*    background: #1557d6;*/
+/*}*/

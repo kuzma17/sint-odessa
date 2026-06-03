@@ -1,0 +1,79 @@
+/*base css*/
+@import url("components/header.css");
+@import url("components/footer.css");
+@import url("components/cta.css");
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/*btn*/
+.btn-blue{
+    padding: 14px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: #01ACF1;
+    color: #ffff;
+}
+.btn-blue:hover{
+    background: #17bafd;
+    color: #ffff;
+}
+
+/*card box*/
+.card-box{
+    background:#fff;
+    height:100%; /* все блоки одинаковые */
+    border-radius:14px;
+    padding:25px 25px 15px 25px;
+    /*text-align:center;*/
+    box-shadow:0 10px 30px rgba(0,0,0,0.07);
+    transition:all 0.3s ease;
+    border:1px solid #f0f0f0;
+}
+
+.card-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+}
+
+/*.row > [class*="col-"] {*/
+/*    display: flex;*/
+/*}*/
+
+/*.card-box {*/
+/*    width: 100%;*/
+/*}*/
+
+/*!*Page Hero*!*/
+
+.page-hero{
+    padding:140px 0 80px;
+    background:#f8fafc;
+    text-align:center;
+}
+
+.page-hero h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.page-hero p{
+    max-width:650px;
+    margin:auto;
+    font-size:18px;
+    color:#6b7280;
+}
+
+p{
+    color:#6b7280;
+}

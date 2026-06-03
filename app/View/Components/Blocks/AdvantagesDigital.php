@@ -1,0 +1,27 @@
+<?php
+
+namespace App\View\Components\Blocks;
+
+use Closure;
+use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
+
+class AdvantagesDigital extends Component
+{
+    public $advantages;
+    /**
+     * Create a new component instance.
+     */
+    public function __construct($advantages)
+    {
+        $this->advantages = $advantages;
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     */
+    public function render(): View|Closure|string
+    {
+        return view('components.blocks.advantages-digital');
+    }
+}

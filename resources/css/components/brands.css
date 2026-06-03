@@ -1,0 +1,21 @@
+/* Brands */
+.brands{
+    background:#fff;
+    padding:80px 0;
+}
+
+.brand-logo {
+    background-color: white;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.8;
+    padding: 0 10px;
+    border-radius: 14px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+
+}
+.brand-logo:hover {
+    transform: scale(1.15);
+    opacity: 1;
+}

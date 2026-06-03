@@ -1,0 +1,43 @@
+/* Reviews */
+.reviews-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.review-card{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.review-card p {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.review-stars{
+    color:#f59e0b;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.review-user {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.review-user img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-city{
+    font-size:13px;
+    color:#6b7280;
+}

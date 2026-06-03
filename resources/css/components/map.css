@@ -1,0 +1,61 @@
+/*Map*/
+.offices-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.map{
+    height:420px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.office-list{
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+}
+
+/*.office-card{*/
+/*    background:#fff;*/
+/*    padding:20px;*/
+/*    border-radius:10px;*/
+/*    cursor:pointer;*/
+/*    transition:0.3s;*/
+/*    box-shadow:0 5px 15px rgba(0,0,0,0.05);*/
+/*}*/
+
+.office-card h5{
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.office-card p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.office-card i{
+    color:#2563eb;
+}
+
+
+.office-card.active{
+    border:2px solid #2563eb;
+    box-shadow:0 10px 25px rgba(37,99,235,0.2);
+}
+
+.office-card {
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.office-card:hover {
+    box-shadow: 0 10px 25px rgba(37,99,235,0.2);
+    border-color: #2563eb;
+}
