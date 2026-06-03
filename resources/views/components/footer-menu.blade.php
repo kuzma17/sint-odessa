@@ -14,8 +14,8 @@
 <div class="col-lg-3 col-md-6 mb-4">
     <h5 class="footer-title">{{__('menu.services')}}</h5>
     <ul class="footer-links">
-        <li><a href="{{lroute('services', 'cartridge-refill')}}">{{__('menu.cartridge-refill')}}</a></li>
-        <li><a href="{{lroute('services', 'printers-repair')}}">{{__('menu.printers-repair')}}</a></li>
-        <li><a href="{{lroute('services', 'pc-repair')}}">{{__('menu.pc-repair')}}</a></li>
+        <li><a href="{{lroute('service', 'cartridge-refill')}}">{{__('menu.cartridge-refill')}}</a></li>
+        <li><a href="{{lroute('service', 'printer-repair')}}">{{__('menu.printers-repair')}}</a></li>
+        <li><a href="{{lroute('service', 'pc-repair')}}">{{__('menu.pc-repair')}}</a></li>
     </ul>
 </div>
