@@ -1,0 +1,1 @@
+document.addEventListener(`DOMContentLoaded`,function(){document.querySelectorAll(`.faq-item`).forEach(e=>{let t=e.querySelector(`.faq-question`),n=e.querySelector(`.faq-answer`);t.addEventListener(`click`,function(){n&&e.classList.toggle(`open`)})})});

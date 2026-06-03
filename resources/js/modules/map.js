@@ -65,7 +65,7 @@ function addMarker(lat, lng, title) {
         map: map,
         title: title,
         icon: {
-            url: '/images/marker.svg',
+            url: 'images/marker.svg',
             scaledSize: new google.maps.Size(40, 40)
         }
     });
