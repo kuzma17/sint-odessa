@@ -35,13 +35,13 @@
                             </div>
                         </div>
 
-                        <div class="worktime-row">
-                            <i class="fa-regular fa-calendar"></i>
-                            <div>
-                                <strong>{{__('pages.saturday')}}</strong>
-                                <span>{{settings('working_hours_sat')}}</span>
-                            </div>
-                        </div>
+{{--                        <div class="worktime-row">--}}
+{{--                            <i class="fa-regular fa-calendar"></i>--}}
+{{--                            <div>--}}
+{{--                                <strong>{{__('pages.saturday')}}</strong>--}}
+{{--                                <span>{{settings('working_hours_sat')}}</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="worktime-row">
                             <i class="fa-regular fa-calendar-xmark"></i>

@@ -34,7 +34,7 @@
                     <div class="header-worktime">
                         <i class="fa-regular fa-clock"></i>
                         {{__('common.week')}} {{settings('working_hours_week', '09:00 - 18:00')}},
-                        сб {{settings('working_hours_sat', '10:00 - 16:00')}}
+{{--                        сб {{settings('working_hours_sat', '10:00 - 16:00')}}--}}
                     </div>
                     @include('layouts/lang-switcher')
                 </div>
